@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 5px;
+        }
+        button {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: black;
+            background-color: #04AA6D;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+        button:hover {background-color: #3e8e41}
+        button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        #container {
+            height: 200px;
+            width: 400px;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Click below to Play Rock Paper Scissor!👇</h2><br>
+        <button id="button" onclick="game()">Play</button><br>
+        <h2><span id="result"></span></h2>
+    </div>
+</body>
+<script src="simple.js"></script>
+</html>
