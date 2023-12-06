@@ -44,8 +44,9 @@ function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
-function game() {
-    const playerSelection = prompt("Enter your Choice!");
+function game(playerSelection) {
+    //const playerSelection = prompt("Enter your Choice!");
+    console.log("You choose "+ playerSelection);
     const computerSelection = getComputerChoice();
     const x=playRound(playerSelection, computerSelection, p_score, c_score);
     p_score+=x[1];
@@ -74,4 +75,4 @@ function scoreUpdate(p_score, c_score){
     score.innerHTML=`Player: ${p_score}, Computer: ${c_score}`;
 }
 
-
+//this was modifies in rps-ui branch - DEC 6 2023

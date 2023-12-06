@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors</title>
     <style>
         body {
             font-family: Arial;
@@ -30,8 +30,6 @@
             transform: translateY(4px);
         }
         #container {
-            height: 200px;
-            width: 400px;
             align-content: center;
             align-items: center;
             text-align: center;
@@ -47,7 +45,12 @@
 <body>
     <div id="container">
         <h2>Click below to Play Rock Paper Scissor!👇</h2><br>
-        <button id="button" onclick="game()">Play</button><br>
+        <!--<button id="button" onclick="game()">Play</button><br>-->
+
+        <button id="rockBtn"  onclick="game('rock')">Rock🪨</button>
+        <button id="paperBtn"  onclick="game('paper')">Paper📄</button>
+        <button id="scissorsBtn" onclick="game('scissors')">Scissors✂️</button>
+        
         <h2 id="score"></h2>
         <h2><span id="result"></span></h2>
     </div>
